@@ -16,6 +16,12 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+     - name: dockerlogin
+        env:
+          DOCKER_USER: ${{secrets.DOCKER_USER}}
+          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+        run: |
+          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD     
     container: jairdelfin/aiops:latest
     
     # Steps represent a sequence of tasks that will be executed as part of the job
