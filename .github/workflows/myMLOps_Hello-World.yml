@@ -48,7 +48,7 @@ jobs:
         run: sed -i 's/_/-/g' manifests/linear_model_k8s.yaml
 
       - name: update sha in k8
-        run: sed -i 's/{github.sha}/${{ github.sha }}/g' manifests/linear_model_k8s.yaml.yaml
+        run: sed -i 's/{github.sha}/${{ github.sha }}/g' manifests/linear_model_k8s.yaml
       - name: list  
         run: cat manifests/linear_model_k8s.yaml
         
