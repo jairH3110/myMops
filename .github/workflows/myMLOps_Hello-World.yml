@@ -3,9 +3,9 @@ name: Modelops deploy
 on:
   # Triggers the workflasdasdow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: [ main ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -16,7 +16,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    container: jairh3110/aiops:latest
+    container: jairdelfin/aiops:latest
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
