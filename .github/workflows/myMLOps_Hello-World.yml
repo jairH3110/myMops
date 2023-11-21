@@ -11,12 +11,15 @@ jobs:
     container: adsoft/aiops:latest
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: helloword 
-        run: echo Hello, world!
-      - name: run model 
-        run: python linear-model.py
-      - name: docker login
-        env:
-          DOCKER_USER: ${{secrets.DOCKER_USER}}
-          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+        run: echo "hello world in workflow"       
+    
+  #    - name: docker login
+   #     env:
+    #      DOCKER_USER: ${{secrets.DOCKER_USER}}
+     #     DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+     #   run: |
+
+#      - name: run model 
+#        run: python linear-model.py 
