@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: {model_name}-container
-        image: docker.io/{docker_user}/tensorflow- -{model_name}:{github.sha}
+        image: docker.io/{docker_user}/tensorflow-linear-model:{github.sha}
         ports:
         - containerPort: 8501
   
