@@ -14,6 +14,10 @@ jobs:
       
       - name: helloword 
         run: echo Hello, world!
+        
+      - name: txt
+        run: pip install -r requirements.txt
+        
       - name: run model 
         run: python linear-model.py
       - name: docker login
