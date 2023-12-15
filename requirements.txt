@@ -1,0 +1,6 @@
+tensorflow
+numpy
+keras
+scikit-learn
+joblib
+protobuf==3.20.0
